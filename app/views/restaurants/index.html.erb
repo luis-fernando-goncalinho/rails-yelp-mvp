@@ -1,0 +1,13 @@
+
+
+<div class="container">
+  <h1> List of all restaurants </h1>
+  <div class="container">
+    <% @restaurants.each do |restaurant| %>
+      <div class="card border m-3 p-3">
+        <%= render restaurant %>
+        <%= link_to "Show this restaurant", restaurant %>
+      </div>
+    <% end %>
+  </div>
+</div>
